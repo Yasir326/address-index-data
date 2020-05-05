@@ -54,7 +54,7 @@ class HybridAddressSkinnyEsDocumentSpec extends WordSpec with Matchers {
   val expectedNagAddressBasePostal = "D"
   val expectedNagEasting = 379171.00F
   val expectedNagNorthing = 412816.00F
-  val expectedNagParentUprn = 999910971564L
+  val expectedNagParentUprn = 1999910971564L
   val expectedNagSaoEndSuffix = "JJ"
   val expectedNagPaoStartNumber: Short = 56.toShort
   val expectedNagPaoStartSuffix = "HH"
@@ -98,7 +98,7 @@ class HybridAddressSkinnyEsDocumentSpec extends WordSpec with Matchers {
   val actualNagAddressBasePostal = "D"
   val actualNagLocality = "LOCALITY XYZ"
   val actualNagLevel = "UP THERE SOME WHERE"
-  val actualNagParentUprn = 999910971564L
+  val actualNagParentUprn = 1999910971564L
   val actualNagMultiOccCount: Short = 0.toShort
   val actualNagBlpuLogicalStatus: Byte = 1.toByte
   val actualNagLocalCustodianCode: Short = 4218.toShort

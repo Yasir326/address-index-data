@@ -100,7 +100,7 @@ class HybridAddressNisraEsDocumentSpec extends WordSpec with Matchers {
   val expectedNagAddressBasePostal = "D"
   val expectedNagLocality = "Locality Xyz"
   val expectedNagLevel = "UP THERE SOME WHERE"
-  val expectedNagParentUprn = 999910971564L
+  val expectedNagParentUprn = 1999910971564L
   val expectedNagMultiOccCount: Short = 0.toShort
   val expectedNagBlpuLogicalStatus: Byte = 1.toByte
   val expectedNagLocalCustodianCode: Short = 4218.toShort
@@ -145,7 +145,7 @@ class HybridAddressNisraEsDocumentSpec extends WordSpec with Matchers {
   val actualNagAddressBasePostal = "D"
   val actualNagLocality = "LOCALITY XYZ"
   val actualNagLevel = "UP THERE SOME WHERE"
-  val actualNagParentUprn = 999910971564L
+  val actualNagParentUprn = 1999910971564L
   val actualNagMultiOccCount: Short = 0.toShort
   val actualNagBlpuLogicalStatus: Byte = 1.toByte
   val actualNagLocalCustodianCode: Short = 4218.toShort

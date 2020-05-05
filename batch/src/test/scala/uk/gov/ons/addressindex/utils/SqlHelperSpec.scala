@@ -36,7 +36,7 @@ class SqlHelperSpec extends WordSpec with Matchers {
       firstLine.get(3) shouldBe Array(-2.3158117F,53.6111710F) // LOCATION
       firstLine.getFloat(4) shouldBe 379203.00F // X_COORDINATE
       firstLine.getFloat(5) shouldBe 412780.00F // Y_COORDINATE
-      firstLine.getLong(6) shouldBe 999910971564L // PARENT_UPRN
+      firstLine.getLong(6) shouldBe 1999910971564L // PARENT_UPRN
       firstLine.getShort(7) shouldBe 0 // MULTI_OCC_COUNT
       firstLine.getByte(8) shouldBe 1 // LOGICAL_STATUS
       firstLine.getShort(9) shouldBe 4218 // LOCAL_CUSTODIAN_CODE
@@ -93,7 +93,7 @@ class SqlHelperSpec extends WordSpec with Matchers {
       firstLine.get(3) shouldBe Array(-2.3158117F,53.6111710F) // LOCATION
       firstLine.getFloat(4) shouldBe 379203.00F // X_COORDINATE
       firstLine.getFloat(5) shouldBe 412780.00F // Y_COORDINATE
-      firstLine.getLong(6) shouldBe 999910971564L // PARENT_UPRN
+      firstLine.getLong(6) shouldBe 1999910971564L // PARENT_UPRN
       firstLine.getShort(7) shouldBe 0 // MULTI_OCC_COUNT
       firstLine.getByte(8) shouldBe 1 // LOGICAL_STATUS
       firstLine.getShort(9) shouldBe 4218 // LOCAL_CUSTODIAN_CODE

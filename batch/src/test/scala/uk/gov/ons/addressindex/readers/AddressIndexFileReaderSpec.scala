@@ -71,7 +71,7 @@ class AddressIndexFileReaderSpec extends WordSpec with Matchers {
       firstLine.getByte(4) shouldBe 1 // LOGICAL_STATUS
       firstLine.getByte(5) shouldBe 3 // BLPU_STATE
       firstLine.getDate(6) shouldBe format.parse("2007-06-26") // BLPU_STATE_DATE
-      firstLine.getLong(7) shouldBe 999910971564L // PARENT_UPRN
+      firstLine.getLong(7) shouldBe 1999910971564L // PARENT_UPRN
       firstLine.getFloat(8) shouldBe 379203.00F // X_COORDINATE
       firstLine.getFloat(9) shouldBe 412780.00F // Y_COORDINATE
       firstLine.getFloat(10) shouldBe 53.6111710F // LATITUDE
