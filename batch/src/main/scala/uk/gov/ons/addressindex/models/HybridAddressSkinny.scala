@@ -30,7 +30,7 @@ trait HybridAddressSkinny {
       row.getString(17),
       if (row.isNullAt(18)) "" else row.getShort(18).toString,
       row.getString(19), row.getString(15), row.getString(30), row.getString(31),
-      row.getString(32), row.getString(1)
+      row.getString(32), row.getString(1).trim
     ),
     "mixedNag" -> (if (row.getString(29) != "ENG") "" else generateNagAddress(row)),
     "mixedWelshNag" -> (if (row.getString(29) == "ENG") "" else generateNagAddress(row)),
