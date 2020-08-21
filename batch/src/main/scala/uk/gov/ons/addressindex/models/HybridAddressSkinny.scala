@@ -119,7 +119,7 @@ trait HybridAddressSkinny {
       normalize(row.getString(30)),
       normalize(row.getString(32)),
       normalizeTowns(row.getString(31)),
-      row.getString(1) + " " + row.getString(1).replace(" ","")
+      row.getString(1).trim + " " + row.getString(1).replace(" ","")
     )
 
 }
