@@ -212,8 +212,8 @@ object SqlHelper {
 
   private val hierarchyDF = AddressIndexFileReader.readHierarchyCSV()
 
-  private val hierarchyDFhacked = hierarchyDF.withColumn("level", when(col("level").equalTo(6), 1)
-    .otherwise(col("level")))
+  private val hierarchyDFhacked = hierarchyDF.withColumn("thisLayer", when(col("thisLayer").equalTo(6), 1)
+    .otherwise(col("thisLayer")))
 
   private val hierarchyGrouped = aggregateHierarchyInformation(hierarchyDFhacked)
     .groupBy("primaryUprn")
