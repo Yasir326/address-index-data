@@ -107,7 +107,8 @@ object AddressIndexFileReader {
       .schema(schema)
       .option("header", "true")
       .option("mode", "PERMISSIVE")
-      .load(resolveAbsolutePath(path))
+  //    .load(resolveAbsolutePath(path))
+      .load(path)
 
   private def readTxt(path: String, schema: StructType): DataFrame =
     SparkProvider.sqlContext.read
@@ -116,8 +117,8 @@ object AddressIndexFileReader {
       .option("header", "true")
       .option("delimiter", "|")
       .option("mode", "PERMISSIVE")
-      .load(resolveAbsolutePath(path))
-
+  //    .load(resolveAbsolutePath(path))
+      .load(path)
   private def resolveAbsolutePath(path: String) = {
     val currentDirectory = new java.io.File(".").getCanonicalPath
 

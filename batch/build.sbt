@@ -1,6 +1,20 @@
+//scalaVersion := "Scala version, for example, 2.11.8"
+
+//name := "word-count"
+//organization := "dataproc.codelab"
+//version := "1.0"
+
+//libraryDependencies ++= Seq(
+//  "org.scala-lang" % "scala-library" % scalaVersion.value % "provided",
+//  "org.apache.spark" %% "spark-core" % "Spark version, for example, 2.3.1" % "provided"
+//)
+
+
+
 resolvers ++= Seq(
   // allows us to include spark packages
-  "bintray-spark-packages" at "https://dl.bintray.com/spark-packages/maven/",
+   "spark-packages" at "https://repos.spark-packages.org/",
+ // "bintray-spark-packages" at "https://dl.bintray.com/spark-packages/maven/",
   "conjars" at "https://conjars.org/repo"
 )
 
@@ -16,9 +30,9 @@ val localDeps = Seq(
 )
 
 val clouderaDeps = Seq(
-  "org.apache.spark" %% "spark-core" % "2.4.0" % "provided",
-  "org.apache.spark" %% "spark-sql" % "2.4.0" % "provided",
-  "org.apache.spark" %% "spark-hive" % "2.4.0" % "provided",
+  "org.apache.spark" %% "spark-core" % "2.4.8" % "provided",
+  "org.apache.spark" %% "spark-sql" % "2.4.8" % "provided",
+  "org.apache.spark" %% "spark-hive" % "2.4.8" % "provided",
   "commons-httpclient" % "commons-httpclient" % "3.1"
 )
 
