@@ -18,32 +18,32 @@ resolvers ++= Seq(
   "conjars" at "https://conjars.org/repo"
 )
 
-val localTarget: Boolean = false
+val localTarget: Boolean = true
 // set to true when testing locally (or to build a fat jar)
 // false for deployment to Cloudera with a thin jar
 // reload all sbt projects to clear ivy cache
 
 val localDeps = Seq(
-  "org.apache.spark" %% "spark-core" % "2.4.0",
-  "org.apache.spark" %% "spark-sql" % "2.4.0",
-  "org.apache.spark" %% "spark-hive" % "2.4.0"
+  "org.apache.spark" %% "spark-core" % "3.1.2",
+  "org.apache.spark" %% "spark-sql" % "3.1.2",
+  "org.apache.spark" %% "spark-hive" % "3.1.2"
 )
 
 val clouderaDeps = Seq(
-  "org.apache.spark" %% "spark-core" % "2.4.8" % "provided",
-  "org.apache.spark" %% "spark-sql" % "2.4.8" % "provided",
-  "org.apache.spark" %% "spark-hive" % "2.4.8" % "provided",
+  "org.apache.spark" %% "spark-core" % "3.1.2" % "provided",
+  "org.apache.spark" %% "spark-sql" % "3.1.2" % "provided",
+  "org.apache.spark" %% "spark-hive" % "3.1.2" % "provided",
   "commons-httpclient" % "commons-httpclient" % "3.1"
 )
 
 val otherDeps = Seq(
-  "com.databricks" %% "spark-csv" % "1.5.0",
+  "com.databricks" % "spark-csv_2.11" % "1.5.0",
   "com.typesafe" % "config" % "1.3.3",
-  "org.elasticsearch" %% "elasticsearch-spark-20" % "7.3.1"  excludeAll ExclusionRule(organization = "javax.servlet"),
+  "org.elasticsearch" %% "elasticsearch-spark-20" % "7.12.0"  excludeAll ExclusionRule(organization = "javax.servlet"),
   "org.scalatest" %% "scalatest" % "3.0.5" % Test,
   "org.rogach" %% "scallop" % "3.1.5",
   "org.scalaj" %% "scalaj-http" % "2.4.1",
-  "com.crealytics" %% "spark-excel" % "0.10.2"
+  "com.crealytics" %% "spark-excel" % "0.12.0"
 )
 
 if (localTarget) libraryDependencies ++= Seq(
